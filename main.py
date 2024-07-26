@@ -6,9 +6,9 @@ from flask_bcrypt import Bcrypt  # Import the Bcrypt module
 import datetime
 
 app = Flask(__name__)
-app.config["MONGO_URI"] = "mongodb://localhost:27017/flask"
+app.config["MONGO_URI"] = "mongodb://localhost:27017/your mongodb"
 app.config["JWT_SECRET_KEY"] = "your_jwt_secret_key"
-app.config["SECRET_KEY"] = "9869340732"
+app.config["SECRET_KEY"] = "add your key"
 app.config["BCRYPT_LOG_ROUNDS"] = 12  # Set the Bcrypt log rounds (adjust as needed)
 bcrypt = Bcrypt(app)  # Initialize Bcrypt
 jwt = JWTManager(app)
